@@ -8,8 +8,8 @@ sys.path.append(str(Path(__file__).parent))
 
 from src.predict import TailDetector
 
-CONFIDENCE = 0.20
-MODEL_PATH = Path("models/tail_model_20260220_1348.pt")
+CONFIDENCE = 0.35
+MODEL_PATH = Path("models/tail_model_v2_20260221_1357.pt")
 
 detector = TailDetector(MODEL_PATH, confidence=CONFIDENCE)
 
@@ -33,7 +33,7 @@ with gr.Blocks(title="Детектор хвостов") as demo:
         with gr.Column():
             image_input = gr.Image(label="Загрузите фото", type="numpy")
             confidence_slider = gr.Slider(
-                minimum=0.05, maximum=0.5, value=CONFIDENCE, step=0.05,
+                minimum=0.05, maximum=0.8, value=CONFIDENCE, step=0.05,
                 label="Порог уверенности"
             )
             submit_btn = gr.Button("Найти хвост", variant="primary")

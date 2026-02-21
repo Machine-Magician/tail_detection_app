@@ -7,7 +7,7 @@
 ##  Клонируйте репозиторий:
 ```bash
 git clone https://github.com/Machine-Magician/tail_detection_app.git
-cd tail-detection_app
+cd tail_detection_app
 
 
 ##  Установите зависимости:
