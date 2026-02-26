@@ -9,7 +9,7 @@ sys.path.append(str(Path(__file__).parent))
 from src.predict import TailDetector
 
 CONFIDENCE = 0.35
-MODEL_PATH = Path("models/tail_model_v2_20260221_1357.pt")
+MODEL_PATH = Path("models/tail_model_20260226_0722.pt")
 
 detector = TailDetector(MODEL_PATH, confidence=CONFIDENCE)
 
