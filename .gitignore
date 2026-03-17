@@ -1,0 +1,33 @@
+# Перейдите в папку проекта (вы уже там)
+cd C:\Users\user0907\SalesForecast
+
+# Инициализируйте новый репозиторий
+git init
+
+# Создайте .gitignore для проекта
+echo "# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+.venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# System
+Thumbs.db
+.DS_Store
+" > .gitignore
+
+# Добавьте файлы проекта
+git add .
+git commit -m "Initial commit with SalesForecast project"
